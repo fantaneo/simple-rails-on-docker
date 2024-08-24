@@ -1,0 +1,27 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.245.2/containers/ruby
+{
+  "name": "devcontainer settings for cimg/ruby",
+  "dockerComposeFile": ["../docker-compose.yml", "./docker-compose.yml"],
+  "service": "web",
+  "runServices": ["web", "db"],
+  "workspaceFolder": "/myapp",
+  "remoteUser": "root",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "koichisasada.vscode-rdbg",
+        "wenfangdu.jump",
+        "shopify.ruby-extensions-pack",
+        // "shopify.ruby-lsp",
+        "bung87.rails",
+        "misogi.ruby-rubocop",
+        "alefragnani.bookmarks",
+        "castwide.solargraph",
+        "rubocop.vscode-rubocop",
+        "ms-azuretools"
+      ],
+      "settings": {}
+    }
+  }
+}
